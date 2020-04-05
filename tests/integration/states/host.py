@@ -10,9 +10,9 @@ import shutil
 from salttesting.helpers import ensure_in_syspath
 ensure_in_syspath('../../')
 
-# Import salt libs
+# Import bonneville libs
 import integration
-import salt.utils
+import bonneville.utils
 
 HFILE = os.path.join(integration.TMP, 'hosts')
 

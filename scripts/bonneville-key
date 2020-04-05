@@ -1,0 +1,10 @@
+#!/usr/bin/env python
+'''
+Manage the authentication keys with bonneville-key
+'''
+
+from bonneville.scripts import bonneville_key
+
+
+if __name__ == '__main__':
+    bonneville_key()

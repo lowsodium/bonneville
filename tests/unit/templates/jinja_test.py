@@ -12,8 +12,8 @@ from salttesting import skipIf, TestCase
 from salttesting.helpers import ensure_in_syspath
 ensure_in_syspath('../../')
 
-# Import salt libs
-import salt.utils
+# Import bonneville libs
+import bonneville.utils
 from salt.exceptions import SaltRenderError
 from salt.utils import get_context
 from salt.utils.jinja import SaltCacheLoader, SerializerExtension

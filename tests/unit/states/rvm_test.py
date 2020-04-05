@@ -4,9 +4,9 @@ from salttesting.helpers import ensure_in_syspath
 from salttesting.mock import NO_MOCK, NO_MOCK_REASON, MagicMock, patch
 ensure_in_syspath('../../')
 
-# Import salt libs
-import salt.modules.rvm
-import salt.states.rvm as rvm
+# Import bonneville libs
+import bonneville.modules.rvm
+import bonneville.states.rvm as rvm
 
 rvm.__salt__ = {}
 rvm.__opts__ = {'test': False}

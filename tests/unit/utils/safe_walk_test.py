@@ -9,10 +9,10 @@ from salttesting import TestCase
 from salttesting.helpers import ensure_in_syspath
 ensure_in_syspath('../../')
 
-# Import salt libs
+# Import bonneville libs
 import integration
-import salt.utils
-import salt.utils.find
+import bonneville.utils
+import bonneville.utils.find
 
 
 class TestUtils(TestCase):

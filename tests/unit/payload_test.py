@@ -15,8 +15,8 @@ from salttesting.helpers import ensure_in_syspath, MockWraps
 from salttesting.mock import NO_MOCK, NO_MOCK_REASON, patch
 ensure_in_syspath('../')
 
-# Import salt libs
-import salt.payload
+# Import bonneville libs
+import bonneville.payload
 from salt.utils.odict import OrderedDict
 
 # Import 3rd-party libs

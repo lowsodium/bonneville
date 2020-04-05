@@ -1,4 +1,4 @@
-import salt.utils.decorators
+import bonneville.utils.decorators
 import time
 
 def _fallbackfunc():

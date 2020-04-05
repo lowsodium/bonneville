@@ -1,0 +1,11 @@
+#!/usr/bin/env python
+'''
+Directly call a bonneville command in the modules, does not require a running bonneville
+minion to run.
+'''
+
+from bonneville.scripts import bonneville_call
+
+
+if __name__ == '__main__':
+    bonneville_call()

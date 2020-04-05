@@ -20,7 +20,7 @@ from salttesting.helpers import ensure_in_syspath
 from salttesting.mock import NO_MOCK, NO_MOCK_REASON, patch
 ensure_in_syspath('../../')
 
-# Import salt libs
+# Import bonneville libs
 from salt.utils import warn_until, kwargs_warn_until
 
 @skipIf(NO_MOCK, NO_MOCK_REASON)

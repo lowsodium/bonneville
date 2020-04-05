@@ -9,9 +9,9 @@ import optparse
 import pprint
 
 # Import Salt Libs
-import salt.config
-import salt.wheel
-import salt.auth
+import bonneville.config
+import bonneville.wheel
+import bonneville.auth
 
 
 def parse():

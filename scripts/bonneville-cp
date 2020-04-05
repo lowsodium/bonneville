@@ -1,0 +1,10 @@
+#!/usr/bin/env python
+'''
+Publish commands to the bonneville system from the command line on the master.
+'''
+
+from bonneville.scripts import bonneville_cp
+
+
+if __name__ == '__main__':
+    bonneville_cp()

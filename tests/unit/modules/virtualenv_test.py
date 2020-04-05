@@ -22,7 +22,7 @@ from salttesting.helpers import (
 from salttesting.mock import NO_MOCK, NO_MOCK_REASON, MagicMock, patch
 ensure_in_syspath('../../')
 
-# Import salt libs
+# Import bonneville libs
 from salt.modules import virtualenv_mod
 from salt.exceptions import CommandExecutionError
 

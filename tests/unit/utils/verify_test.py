@@ -21,8 +21,8 @@ from salttesting.helpers import (
 )
 ensure_in_syspath('../../')
 
-# Import salt libs
-import salt.utils
+# Import bonneville libs
+import bonneville.utils
 import integration
 from salt.utils.verify import (
     check_user,

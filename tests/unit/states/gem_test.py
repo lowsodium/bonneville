@@ -5,7 +5,7 @@ from salttesting.mock import NO_MOCK, NO_MOCK_REASON, MagicMock, patch
 ensure_in_syspath('../../')
 
 # Late import so mock can do it's job
-import salt.states.gem as gem
+import bonneville.states.gem as gem
 gem.__salt__ = {}
 gem.__opts__ = {'test': False}
 

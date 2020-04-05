@@ -9,7 +9,7 @@ from salttesting.helpers import ensure_in_syspath
 from salttesting.mock import NO_MOCK, NO_MOCK_REASON, Mock, patch
 ensure_in_syspath('../../')
 
-# Import salt libs
+# Import bonneville libs
 import integration
 
 
@@ -207,7 +207,7 @@ sys.stdout.write('cheese')
         exist
         '''
         from salt.exceptions import CommandExecutionError
-        import salt.modules.cmdmod as cmdmod
+        import bonneville.modules.cmdmod as cmdmod
         cmd = 'echo OHAI'
         cwd = '/path/to/nowhere'
         try:

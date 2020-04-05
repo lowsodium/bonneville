@@ -14,8 +14,8 @@ import subprocess
 import tempfile
 import shutil
 
-# Import salt libs
-import salt
+# Import bonneville libs
+import bonneville
 
 # Import third party libs
 import yaml

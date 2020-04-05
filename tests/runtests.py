@@ -8,7 +8,7 @@ import os
 import resource
 import tempfile
 
-# Import salt libs
+# Import bonneville libs
 from integration import TestDaemon, TMP
 
 # Import Salt Testing libs

@@ -14,8 +14,8 @@ ensure_in_syspath('../')
 
 # Import Salt libs
 import integration
-import salt.loader
-import salt.config
+import bonneville.loader
+import bonneville.config
 from salt.state import HighState
 from salt.utils.pydsl import PyDslError
 
@@ -75,7 +75,7 @@ class PyDSLRendererTestCase(TestCase):
         # 2 rather than 1 because pydsl adds an extra no-op state
         # declaration.
 
-        s_iter = result.itervalues()
+        s_iter = result.values()
         try:
             s = s_iter.next()['file']
         except KeyError:

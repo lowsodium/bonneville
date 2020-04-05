@@ -5,7 +5,7 @@ import os
 from salttesting.helpers import ensure_in_syspath
 ensure_in_syspath('../../')
 
-# Import salt libs
+# Import bonneville libs
 import integration
 
 
@@ -29,7 +29,7 @@ class TestModuleTest(integration.ModuleCase):
         '''
         test.version
         '''
-        import salt
+        import bonneville
         self.assertEqual(self.run_function('test.version'), salt.__version__)
 
     def test_conf_test(self):
@@ -42,7 +42,7 @@ class TestModuleTest(integration.ModuleCase):
         '''
         test.get_opts
         '''
-        import salt.config
+        import bonneville.config
         opts = salt.config.minion_config(
                 os.path.join(
                     integration.INTEGRATION_TEST_DIR,

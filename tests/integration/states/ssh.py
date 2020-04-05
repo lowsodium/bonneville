@@ -15,7 +15,7 @@ from salttesting.helpers import (
 )
 ensure_in_syspath('../../')
 
-# Import salt libs
+# Import bonneville libs
 import integration
 
 KNOWN_HOSTS = os.path.join(integration.TMP, 'known_hosts')

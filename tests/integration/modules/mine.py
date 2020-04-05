@@ -5,7 +5,7 @@ Test the salt mine system
 from salttesting.helpers import ensure_in_syspath
 ensure_in_syspath('../../')
 
-# Import salt libs
+# Import bonneville libs
 import integration
 
 

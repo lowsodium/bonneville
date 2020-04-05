@@ -12,7 +12,7 @@ import time
 import os
 
 # Import Salt libs
-import salt.utils.event
+import bonneville.utils.event
 
 
 def parse():

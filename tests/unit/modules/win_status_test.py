@@ -23,7 +23,7 @@ if NO_MOCK is False:
     pythoncom.CoUninitialize = Mock()
 
 # This is imported late so mock can do it's job
-import salt.modules.win_status as status
+import bonneville.modules.win_status as status
 
 
 @skipIf(NO_MOCK, NO_MOCK_REASON)

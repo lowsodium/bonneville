@@ -10,8 +10,8 @@ ensure_in_syspath('../../')
 # Import third party libs
 import yaml
 
-# Import salt libs
-import salt.states.file as filestate
+# Import bonneville libs
+import bonneville.states.file as filestate
 
 filestate.__salt__ = {'file.manage_file': False}
 filestate.__opts__ = {'test': False}

@@ -38,13 +38,13 @@ from salttesting.helpers import ensure_in_syspath, RedirectStdStreams
 ensure_in_syspath(CODE_DIR, SALT_LIBS)
 
 # Import Salt libs
-import salt
-import salt.config
-import salt.master
-import salt.minion
-import salt.runner
-import salt.output
-import salt.version
+import bonneville
+import bonneville.config
+import bonneville.master
+import bonneville.minion
+import bonneville.runner
+import bonneville.output
+import bonneville.version
 from salt.utils import fopen, get_colors
 from salt.utils.verify import verify_env
 
@@ -449,7 +449,7 @@ class TestDaemon(object):
             list(targets), 'saltutil.running', expr_form='list'
         )
         return [
-            k for (k, v) in running.iteritems() if v and v[0]['jid'] == jid
+            k for (k, v) in running.items() if v and v[0]['jid'] == jid
         ]
 
     def wait_for_minion_connections(self, targets, timeout):
@@ -533,7 +533,7 @@ class TestDaemon(object):
         while syncing:
             rdata = self.client.get_full_returns(jid_info['jid'], syncing, 1)
             if rdata:
-                for name, output in rdata.iteritems():
+                for name, output in rdata.items():
                     if not output['ret']:
                         # Already synced!?
                         syncing.remove(name)
@@ -857,7 +857,7 @@ class SaltReturnAssertsMixIn(object):
         self.assertReturnNonEmptySaltType(ret)
         keys = self.__return_valid_keys(keys)
         okeys = keys[:]
-        for part in ret.itervalues():
+        for part in ret.values():
             try:
                 ret_item = part[okeys.pop(0)]
             except (KeyError, TypeError):

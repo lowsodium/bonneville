@@ -6,7 +6,7 @@ ensure_in_syspath('../')
 ensure_in_syspath('../../')
 
 # Import Salt libs
-import salt.config
+import bonneville.config
 from salt.state import HighState
 
 

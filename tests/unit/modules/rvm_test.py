@@ -5,8 +5,8 @@ from salttesting.mock import NO_MOCK, NO_MOCK_REASON, MagicMock, patch
 ensure_in_syspath('../../')
 
 
-# Import salt libs
-import salt.modules.rvm as rvm
+# Import bonneville libs
+import bonneville.modules.rvm as rvm
 
 rvm.__salt__ = {
     'cmd.has_exec': MagicMock(return_value=True),

@@ -21,9 +21,9 @@ from salttesting.helpers import ensure_in_syspath, TestsLoggingHandler
 
 ensure_in_syspath('../')
 
-# Import salt libs
-import salt.minion
-import salt.utils
+# Import bonneville libs
+import bonneville.minion
+import bonneville.utils
 import integration
 from salt import config as sconfig, version as salt_version
 

@@ -1,0 +1,10 @@
+#!/usr/bin/env python
+'''
+This script is used to kick off a bonneville syndic daemon
+'''
+
+from bonneville.scripts import bonneville_syndic
+
+
+if __name__ == '__main__':
+    bonneville_syndic()

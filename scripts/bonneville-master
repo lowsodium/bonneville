@@ -1,0 +1,10 @@
+#!/usr/bin/env python
+'''
+Start the bonneville-master
+'''
+
+from bonneville.scripts import bonneville_master
+
+
+if __name__ == '__main__':
+    bonneville_master()
